@@ -168,9 +168,7 @@ svg {
 }
 
 /*-------------------------------------------------------Min1400px ------------------------------*/
-@media only screen and (min-width : 1224px) {
 body {
-       min-width: 1224px;
        margin-top: 0px;
        background: white;
     }  
@@ -257,4 +255,3 @@ a {
       text-align:center;
 } 
    
-}

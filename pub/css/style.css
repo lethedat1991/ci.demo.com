@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0px;
+}
+
+body {
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.wrapper {
+    padding: 0px 5px;
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 800px;
+}
+
+#top {
+    color: #FFFFFF;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#top #logo img{
+    max-height: 120px;
+}
+
+#top #logo{
+    top: 5px;
+    left: 25px;
+    position: absolute;
+    float: left;
+}
+div#box-category {
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 320px;
+}
+div#box-category > h3 {
+    color: #db0a5b;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    font-weight: normal;
+    height: 55px;
+    width: 200px;
+}
+#search {
+    float: right;
+    height: 30px;
+    margin-top: 15px;
+    position: absolute;
+    right: 20px;
+}
+#search input[type="text"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #cccccc;
+    color: #1d1d1d;
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    line-height: 16px;
+    padding-left: 5px;
+    width: 250px;
+    border-radius: 20px;
+}
+#search .button-search {
+    background: url("../img/search-select.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font-size: 0;
+    height: 27px;
+    line-height: 0;
+    position: absolute;
+    right: 2px;
+    text-indent: -9999px;
+    top: 8px;
+    width: 30px;
+}
+
+
+.logout-button {
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    background: none repeat scroll 0% 0% #F0776C;
+    border: 0px none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0px none;
+}
+.live {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #F60;
+    color: #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.logout {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #61C032;
+    color: #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#bottom {
+    clear: left;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    background: #333333;
+    color: #FFFFFF;
+    text-align: center;
+}
+.gm-style-iw {
+    right: 0 !important;
+    text-align: center;
+}
+.gm-style-iw > div > div {
+    position: relative !important;
+}
+.gm-style-iw > div >div img{
+    max-width: 220px !important;
+}
+.gm-style-iw > div >div a.view_more{
+    left: 30% !important;
+    position: absolute !important;
+    top: 20% !important;
+    color: #fff ;
+}
+.place_name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    clear: both;
+}
+.place_description{
+    font-size: 15px;
+    margin-top: 15px;
+}
+#left {
+    float: left;
+    width: 150px;
+}
+
+#right {
+    float: left;
+    width: 150px;
+}
+
+#info {
+    width: 100%;
+}
+
+#info .news {
+    padding: 5px;
+    text-align: justify;
+}
+
+.news h1 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.news img {
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+    margin: 0px 5px 5px 0px;
+}
+
+.cls {
+    clear: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* demo css left menu */
+#left h1 {
+    font-size: 14px;
+    text-align: center;
+    background: #99CC00;
+    color: #FFFFFF;
+}
+
+#left ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* demo top menu */
+#menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul a {
+    width: 129px;
+    float: left;
+    line-height: 20px;
+    text-decoration: none;
+    background: #FF9999;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #FFFFFF;
+}
+
+#menu ul a:hover {
+    background: #FFCCFF;
+}
+
+/* demo form */
+
+label {
+    width: 120px;
+    float: left;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border: 1px solid #99CC00;
+    margin-bottom: 3px;
+}
+
+fieldset {
+    border: 1px solid #99CC00;
+    margin: 5px;
+}
+
+legend {
+    color: #99CC00;
+    font-weight: bold;
+}
+
+.button {
+    background: #99CC33;
+    color: #FFFFFF;
+    font-weight: bold;
+}

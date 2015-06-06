@@ -9,10 +9,18 @@ a{text-decoration: none;}
 body{ width: 960px; margin: 0px auto;}
 a:hover, a:active, a:visited{color: #268;}
 h1,h2,h3,h4,h5,h6{font: 12px/140% tahoma;}
-html{background: #f0f0f0;}
 
 /*==== login ====*/
-
+.place_info{
+    width: 28%;
+    float: left;
+}
+#map {
+    border: 1px solid #fafafa;
+    height: 500px;
+    width: 70%;
+    float: left;
+}
 #header p{
     text-align: center;
     margin: 10px;
@@ -48,7 +56,111 @@ html{background: #f0f0f0;}
     font: 900 14px arial;
     padding: 0px 10px;
 }
+.htabs {
+    border-bottom: 1px solid #dddddd;
+    height: 30px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    padding: 0 0 0 100px;
+}
+.htabs a.selected {
+    background: none repeat scroll 0 0 #ffffff;
+    padding-bottom: 7px;
+}
+.htabs a {
+    background: #F4F4F4 repeat-x scroll 0 0 #ffffff;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    color: #000000;
+    display: none;
+    float: left;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 7px 15px 6px;
+    text-align: center;
+    text-decoration: none;
+}
 
+.list {
+    border-collapse: collapse;
+    border-left: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.list td {
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.list thead td {
+    background-color: #efefef;
+    padding: 5px;
+}
+.list thead td a, .list thead td {
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+}
+.list tbody td a {
+    text-decoration: underline;
+}
+.list tbody td {
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+.list tbody td span.sort-order {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #c0c0c0;
+    display: block;
+    height: 13px;
+    margin: 0 auto;
+    padding: 1px;
+    width: 36px;
+}
+.list tbody td ul.categories {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #cccccc;
+    list-style: outside none none;
+    margin: 0;
+    padding-left: 10px;
+}
+.list tbody td ul.categories li span {
+    margin-right: 5px;
+}
+.list tbody tr:nth-child(2n) td {
+    background: none repeat scroll 0 0 #f4f4f4;
+}
+.list tbody tr:hover td {
+    background-color: #e8f6fe;
+}
+.list .left {
+    padding: 4px;
+    text-align: left;
+}
+.list .right {
+    padding: 4px;
+    text-align: right;
+}
+.list .center {
+    padding: 7px;
+    text-align: center;
+}
+
+.list tr.filter td, .list tr.filter:hover td {
+    background: none repeat scroll 0 0 #e7efef;
+    padding: 5px;
+}
+.list .template p {
+    margin-bottom: 5px;
+}
+.list .template p span {
+    font-weight: bold;
+    margin-right: 5px;
+}
 .show label{
     display: block;
     width: 110px;
@@ -137,39 +249,6 @@ ul.err li{color: #f00;}
     line-height: 30px;
     font-size: 14px;
 }
-
-.list{
-    width: 960px;
-    margin: 0px auto 20px;
-    border: 1px solid #cfcfcf;
-}
-
-.list tr:hover{background: #ffffcf;}
-
-.list th{
-    font: 900 12px/30px tahoma;
-    background: #cfcfcf;
-    border-left: 1px solid #efefef;
-    border-right: 1px solid #afafaf;
-}
-
-.list td{
-    text-align: center;
-    line-height: 26px;
-    border-top: 1px solid #cfcfcf;
-}
-
-.list_page{height: 26px;}
-
-.list_page span{
-    color: #333;
-    padding: 2px 5px;
-    margin: 0px 5px;
-    border: 1px solid #cfcfcf;
-    font-weight: 900;
-}
-
-.list_page a{margin: 0px 4px;}
 
 #list_user,#list_articles,#list_comment{width: 960px;}
 #list_cate{width: 600px;}

@@ -1,0 +1,137 @@
+/* Starter CSS for Flyout Menu */
+#cssmenu {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    z-index: 999;
+    display: none;
+}
+#cssmenu ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cssmenu ul {
+    position: relative;
+    z-index: 597;
+    float: left;
+    background: #fff;
+}
+#cssmenu ul li {
+    float: left;
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+#cssmenu ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: 100%;
+}
+#cssmenu ul ul li {
+    float: none;
+}
+#cssmenu ul li:hover > ul {
+    visibility: visible;
+}
+#cssmenu ul ul {
+    top: 0;
+    left: 100%;
+}
+#cssmenu ul li {
+    float: none;
+}
+/* Custom Stuff */
+#cssmenu span,
+#cssmenu a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+#cssmenu {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    border-top: 3px solid #DB0A5B;
+    width: 150px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#cssmenu > ul > li:first-child {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#cssmenu > ul > li:last-child {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#cssmenu > ul > li ul ul li:first-child {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#cssmenu > ul > li ul ul li:last-child {
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#cssmenu ul,
+#cssmenu li {
+    width: 100%;
+}
+#cssmenu li {
+}
+#cssmenu li:hover,
+#cssmenu li.active {
+    background: #F4BFD3;
+    -moz-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+}
+#cssmenu li:hover > a,
+#cssmenu li.active > a {
+    color: #333;
+}
+#cssmenu a {
+    color: #222;
+    line-height: 160%;
+    padding: 6px 8px 7px 20px;
+    width: 140px;
+    text-align: left;
+}
+#cssmenu ul ul {
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    width: 135px;
+}
+#cssmenu ul ul li {
+    background: #fff;
+    box-shadow: inset 0 1px 0 #F4BFD3;
+}
+#cssmenu ul ul li:hover {
+    background: #F4BFD3;
+}
+#cssmenu ul ul li a {
+    color: #333;
+}
+#cssmenu ul ul a,
+#cssmenu ul ul a span {
+    font-size: 12px;
+}

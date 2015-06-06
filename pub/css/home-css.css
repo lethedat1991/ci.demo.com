@@ -20,7 +20,6 @@ dd,
 del,
 details,
 dfn,
-dialog,
 div,
 dl,
 dt,
@@ -87,7 +86,7 @@ u,
 ul,
 var,
 video,
-xmp {
+{
   border: 0;
   margin: 0;
   padding: 0;
@@ -168,27 +167,23 @@ svg {
 }
 
 /*-------------------------------------------------------Min1400px ------------------------------*/
-Global Links CSS
+
 /******************************************/
 a{ color: #3883cc; outline:none; text-decoration: none; }
 a:hover { color: #000; text-decoration:none; }
-body{ background: transparent url(http://2.bp.blogspot.com/-J5Ci5_fwpjs/VCkW2Wfw5XI/AAAAAAAAAFA/03RdPIkdCmg/s1600/bg.png) repeat scroll top left; color: #333; padding: 0; font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 25px; }
+body{ background: #fff repeat scroll top left; color: #333; padding: 0; font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 25px; }
 .clr { clear:both; float:none; }
 /*****************************************
 Wrappers
 ******************************************/
 .header-wrapper { display: inline-block; float: left; width: 100%; }
-.ct-wrapper { padding: 0px 20px; position: relative; max-width: 1080px; margin: 0 auto; }
+.ct-wrapper { padding: 0px 5px; position: relative; max-width: 1100px; margin: 0 auto; }
 .home_demo{
     background-color: white;
     min-height: 500px;
 }
 .ct_demo{
     width: 100%;
-    box-shadow: 1px 2px 3px #888;
-    min-height: 300px;
-    margin: 5px 0px;
-    padding-top: 20px;
 }
 .home_demo h1{
     margin: 10px 10px;

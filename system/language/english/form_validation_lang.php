@@ -1,8 +1,8 @@
 <?php
 
-$lang['required']			= "Nhập lại %s ";
+$lang['required']			= "Hãy nhập lại %s ";
 $lang['isset']				= "The %s field must have a value.";
-$lang['valid_email']		= "Nhập lại %s ";
+$lang['valid_email']		= "Hãy nhập lại %s ";
 $lang['valid_emails']		= "Hãy nhập %s một cách chính xác nhất";
 $lang['valid_url']			= "The %s field must contain a valid URL.";
 $lang['valid_ip']			= "The %s field must contain a valid IP.";

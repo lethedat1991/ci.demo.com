@@ -38,6 +38,25 @@ class Md_map extends CI_Model
         return $query->first_row();
     }
 
+    function get_place($place_id)
+    {
+        $this->db->select();
+        $this->db->where('id', $place_id);
+        $this->db->from("tbl_place");
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
+    function get_imageall($place_id)
+    {
+        $this->db->select("image");
+        $this->db->where('place_id', $place_id);
+        $this->db->limit(4,0);
+        $this->db->from("tbl_image");
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
     function insertplace($data_insert){
         $this->db->insert('tbl_place',$data_insert);
     }
